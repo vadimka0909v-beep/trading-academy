@@ -1,10 +1,14 @@
 import type { Lesson } from "./types";
+import { part1 } from "./lessons-part1";
+import { part2 } from "./lessons-part2";
+import { part3 } from "./lessons-part3";
+import { part4 } from "./lessons-part4";
 
 // Уроки первой волны. Все числа в примерах посчитаны вручную и проверены.
 // Графики с пометкой «учебный пример» — синтетические данные, не реальные котировки.
 // Источники к урокам будут добавлены после проверки (см. раздел «Источники» в каждом уроке в следующих версиях).
 
-export const lessons: Lesson[] = [
+const lessonsBase: Lesson[] = [
   {
     id: "1.1",
     moduleId: 1,
@@ -269,6 +273,8 @@ export const lessons: Lesson[] = [
     ],
   },
 ];
+
+export const lessons: Lesson[] = [...lessonsBase, ...part1, ...part2, ...part3, ...part4];
 
 export function getLesson(id: string): Lesson | undefined {
   return lessons.find((l) => l.id === id);
