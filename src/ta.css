@@ -1,0 +1,42 @@
+/* Trading Academy — токены темы. Тёмная тема по умолчанию. См. design.md */
+@theme {
+  --color-ta-bg: #0b1120;
+  --color-ta-card: #131c2e;
+  --color-ta-line: #1f2b40;
+  --color-ta-text: #e6edf7;
+  --color-ta-muted: #8a9bb5;
+  --color-ta-accent: #4fa3ff;
+  --color-ta-up: #3bb273;
+  --color-ta-down: #f0616d;
+  --color-ta-warn: #e8b04b;
+}
+
+html,
+body {
+  background: #0b1120;
+  color: #e6edf7;
+  -webkit-tap-highlight-color: transparent;
+  font-family: system-ui, -apple-system, "Roboto", "Segoe UI", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #4fa3ff;
+  outline-offset: 2px;
+}
+
+/* Бейдж платформы: переносим в правый верхний угол, чтобы не перекрывал нижнюю навигацию. Сам бейдж не удаляем. */
+a[data-runable-badge] {
+  top: 8px !important;
+  bottom: auto !important;
+  right: 8px !important;
+  transform: scale(0.8);
+  transform-origin: top right;
+}
