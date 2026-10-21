@@ -1,0 +1,14 @@
+{
+  "name": "Trading Academy",
+  "short_name": "Trading Academy",
+  "description": "Образовательный курс по трейдингу на русском языке",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#0b1120",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
